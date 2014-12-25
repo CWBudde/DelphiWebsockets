@@ -4,8 +4,8 @@ interface
 
 uses
   Classes,
-  IdCustomTCPServer, IdIOHandlerWebsocket,
-  IdServerBaseHandling, IdServerSocketIOHandling, IdContext;
+  IdCustomTCPServer, IdIOHandlerWebsocket, IdServerBaseHandling,
+  IdServerSocketIOHandling, IdContext;
 
 type
   TIdServerWSContext = class;

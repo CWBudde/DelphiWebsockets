@@ -8,10 +8,8 @@ unit IdIOHandlerWebsocket;
 interface
 
 uses
-  Classes, SysUtils,
-  IdIOHandlerStack, IdGlobal, IdException, IdBuffer,
-  SyncObjs,
-  Generics.Collections;
+  Classes, SysUtils, SyncObjs, Generics.Collections,
+  IdIOHandlerStack, IdGlobal, IdException, IdBuffer;
 
 type
   TWSDataType      = (wdtText, wdtBinary);

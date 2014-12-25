@@ -3,10 +3,9 @@
 interface
 
 uses
-  Classes, Generics.Collections,
+  Classes, Generics.Collections, SyncObjs, SysUtils,
   superobject,
-  IdServerBaseHandling, IdContext, IdException, IdIOHandlerWebsocket, IdHTTP,
-  SyncObjs, SysUtils;
+  IdServerBaseHandling, IdContext, IdException, IdIOHandlerWebsocket, IdHTTP;
 
 type
   TSocketIOContext = class;
@@ -236,7 +235,7 @@ type
 implementation
 
 uses
-  StrUtils, IdServerWebsocketContext, IdHTTPWebsocketClient, Windows;
+  StrUtils, Windows, IdServerWebsocketContext, IdHTTPWebsocketClient;
 
 procedure TIdBaseSocketIOHandling.AfterConstruction;
 begin

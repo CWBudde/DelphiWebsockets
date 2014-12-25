@@ -3,10 +3,10 @@ unit IdServerSocketIOHandling;
 interface
 
 uses
-  IdContext, IdCustomTCPServer,
-  //IdServerWebsocketContext,
   Classes, Generics.Collections,
-  superobject, IdException, IdServerBaseHandling, IdSocketIOHandling;
+  IdContext, IdCustomTCPServer, IdException, IdServerBaseHandling,
+  IdSocketIOHandling, //IdServerWebsocketContext,
+  superobject;
 
 type
   TIdServerSocketIOHandling = class(TIdBaseSocketIOHandling)

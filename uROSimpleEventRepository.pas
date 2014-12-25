@@ -3,8 +3,8 @@ unit uROSimpleEventRepository;
 interface
 
 uses
-  uROEventRepository, uROClient, uROTypes, uROClientIntf,
-  uROHTTPWebsocketServer, uROSessions, Classes, SyncObjs;
+  Classes, SyncObjs, uROEventRepository, uROClient, uROTypes, uROClientIntf,
+  uROHTTPWebsocketServer, uROSessions;
 
 type
   TROSimpleWebsocketEventRepository = class(TInterfacedObject,
@@ -40,7 +40,7 @@ type
 implementation
 
 uses
-  IdContext, IdIOHandlerWebsocket, Windows;
+  Windows, IdContext, IdIOHandlerWebsocket;
 
 { TSimpleEventRepository }
 

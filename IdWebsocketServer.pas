@@ -3,8 +3,9 @@ unit IdWebsocketServer;
 interface
 
 uses
-  IdServerWebsocketHandling, IdServerSocketIOHandling, IdServerWebsocketContext,
-  IdHTTPServer, IdContext, IdCustomHTTPServer, Classes, IdIOHandlerWebsocket;
+  Classes, IdHTTPServer, IdContext, IdCustomHTTPServer,
+  IdServerWebsocketHandling, IdServerSocketIOHandling,
+  IdServerWebsocketContext, IdIOHandlerWebsocket;
 
 type
   TWebsocketMessageText = procedure(const AContext: TIdServerWSContext; const aText: string)  of object;
@@ -43,7 +44,7 @@ type
 implementation
 
 uses
-  IdServerIOHandlerWebsocket, IdStreamVCL, IdGlobal, Windows, IdWinsock2;
+  Windows, IdServerIOHandlerWebsocket, IdStreamVCL, IdGlobal, IdWinsock2;
 
 { TIdWebsocketServer }
 

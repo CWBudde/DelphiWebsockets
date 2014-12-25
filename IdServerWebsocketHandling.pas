@@ -3,6 +3,7 @@ unit IdServerWebsocketHandling;
 interface
 
 uses
+  Classes,
   IdContext, IdCustomHTTPServer,
   {$IF CompilerVersion <= 21.0}  //D2010
   IdHashSHA1,
@@ -10,7 +11,7 @@ uses
   IdHashSHA,                     //XE3 etc
   {$IFEND}
   IdServerSocketIOHandling, IdServerWebsocketContext,
-  Classes, IdServerBaseHandling, IdIOHandlerWebsocket, IdSocketIOHandling;
+  IdServerBaseHandling, IdIOHandlerWebsocket, IdSocketIOHandling;
 
 type
   TIdServerSocketIOHandling_Ext = class(TIdServerSocketIOHandling)

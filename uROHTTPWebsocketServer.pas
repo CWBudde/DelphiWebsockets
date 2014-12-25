@@ -3,11 +3,11 @@ unit uROHTTPWebsocketServer;
 interface
 
 uses
-  Classes, IdServerIOHandlerWebsocket, IdIOHandlerWebsocket,
-  uROIndyHTTPServer, uROClientIntf, uROServer, uROHTTPDispatch,
-  IdContext, IdCustomHTTPServer, IdCustomTCPServer, uROHash, uROServerIntf,
-  IdServerWebsocketContext, IdServerSocketIOHandling,
-  IdServerWebsocketHandling;
+  Classes, IdServerIOHandlerWebsocket, IdIOHandlerWebsocket, IdContext,
+  IdCustomHTTPServer, IdCustomTCPServer, IdServerWebsocketContext,
+  IdServerSocketIOHandling, IdServerWebsocketHandling,
+  uROIndyHTTPServer, uROClientIntf, uROServer, uROHTTPDispatch, uROHash,
+  uROServerIntf;
 
 type
   TROTransportContext = class;

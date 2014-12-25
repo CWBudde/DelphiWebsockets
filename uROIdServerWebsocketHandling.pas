@@ -3,9 +3,8 @@ unit uROIdServerWebsocketHandling;
 interface
 
 uses
-  IdServerWebsocketHandling, IdServerWebsocketContext,
-  IdContext,
-  Classes, IdIOHandlerWebsocket;
+  Classes, IdServerWebsocketHandling, IdServerWebsocketContext, IdContext,
+  IdIOHandlerWebsocket;
 
 type
   TOnRemObjectsRequest = procedure(const AThread: TIdContext; const strmRequest: TMemoryStream; const strmResponse: TMemoryStream) of object;

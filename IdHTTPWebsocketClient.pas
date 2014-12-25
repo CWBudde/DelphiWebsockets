@@ -3,7 +3,12 @@ unit IdHTTPWebsocketClient;
 interface
 
 uses
-  Classes,
+  Classes, Generics.Collections, SyncObjs,
+  {$ifdef FMX}
+  FMX.Types,
+  {$ELSE}
+  ExtCtrls,
+  {$ENDIF}
   IdHTTP,
   {$IF CompilerVersion <= 21.0}  //D2010
   IdHashSHA1,
@@ -11,15 +16,7 @@ uses
   Types,
   IdHashSHA,                     //XE3 etc
   {$IFEND}
-  IdIOHandler,
-  IdIOHandlerWebsocket,
-  {$ifdef FMX}
-  FMX.Types,
-  {$ELSE}
-  ExtCtrls,
-  {$ENDIF}
-  IdWinsock2, Generics.Collections, SyncObjs,
-  IdSocketIOHandling;
+  IdIOHandler, IdIOHandlerWebsocket, IdWinsock2, IdSocketIOHandling;
 
 type
   TWebsocketMsgBin  = procedure(const aData: TStream) of object;
@@ -185,8 +182,8 @@ type
 implementation
 
 uses
-  IdCoderMIME, SysUtils, Math, IdException, IdStackConsts, IdStack,
-  IdStackBSDBase, IdGlobal, Windows, StrUtils, DateUtils;
+  SysUtils, Math, Windows, StrUtils, DateUtils, IdException, IdStackConsts,
+  IdStack, IdCoderMIME, IdStackBSDBase, IdGlobal;
 
 var
   GUnitFinalized: Boolean = false;

@@ -4,8 +4,8 @@ interface
 
 uses
   Classes,
-  IdServerIOHandlerStack, IdIOHandlerStack, IdGlobal, IdIOHandler, IdYarn, IdThread, IdSocketHandle,
-  IdIOHandlerWebsocket;
+  IdServerIOHandlerStack, IdIOHandlerStack, IdGlobal, IdIOHandler, IdYarn,
+  IdThread, IdSocketHandle, IdIOHandlerWebsocket;
 
 type
   TIdServerIOHandlerWebsocket = class(TIdServerIOHandlerStack)

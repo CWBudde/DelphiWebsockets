@@ -65,9 +65,9 @@ type
 implementation
 
 uses
-  SysUtils, Windows,
-  IdStack, IdStackConsts, IdGlobal, IdStackBSDBase,
-  uRORes, uROIndySupport, mcFinalizationHelper, IdIOHandlerWebsocket, StrUtils;
+  SysUtils, Windows, StrUtils,
+  IdStack, IdStackConsts, IdGlobal, IdStackBSDBase, IdIOHandlerWebsocket,
+  uRORes, uROIndySupport, mcFinalizationHelper;
 
 procedure Register;
 begin
