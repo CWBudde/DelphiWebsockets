@@ -23,6 +23,14 @@ uses
   TestFramework,
   mtTestWebSockets in 'mtTestWebSockets.pas',
   IdHTTPWebsocketClient in '..\IdHTTPWebsocketClient.pas',
+  IdIOHandlerWebsocket in '..\IdIOHandlerWebsocket.pas',
+  IdServerBaseHandling in '..\IdServerBaseHandling.pas',
+  IdServerIOHandlerWebsocket in '..\IdServerIOHandlerWebsocket.pas',
+  IdServerSocketIOHandling in '..\IdServerSocketIOHandling.pas',
+  IdServerWebsocketContext in '..\IdServerWebsocketContext.pas',
+  IdServerWebsocketHandling in '..\IdServerWebsocketHandling.pas',
+  IdSocketIOHandling in '..\IdSocketIOHandling.pas',
+  IdWebsocketServer in '..\IdWebsocketServer.pas',
   superobject in '..\superobject\superobject.pas';
 
 begin
